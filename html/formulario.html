@@ -8,12 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../../ProjetoInter/css/style.css">
-    <title>SCA - Cadastro de Alunos</title>
+    <title>Cadastro de Usuario</title>
   </head>
   <body>
     <!--Menu (Navbar)-->
     <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap">
-      <a class="navbar-brand">SCA - Formulário</a>
+      <a class="navbar-brand">PROCESSORIA</a>
       <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
         
@@ -38,13 +38,13 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="formulario.html">
-                  Formulário
+                  Usuario
                 </a>
               </li>
-              <li class="nav-item">
+             <!-- <li class="nav-item">
                 <a class="nav-link" href="#">
                   Contato
-                </a>
+                </a>-->
               </li>
             </ul>
           </div>
@@ -53,22 +53,22 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 mb-3 border-bottom">
-          <h2 class="h2">Cadastro de Alunos</h2>
+          <h2 class="h2">Cadastro de Usuario</h2>
         </div>
 
         <div class="panel panel-primary">
-            <div class="panel-heading border-bottom mb-3">Dados do Aluno</div>
+            <div class="panel-heading border-bottom mb-3">Dados do Usuario</div>
         </div>
         <form>
             <div class="form-group row align-items-center">
-                <label for="prontuario" class="col-sm-2 col-form-label">Prontuário:</label>
+                <label for="prontuario" class="col-sm-2 col-form-label">Nome:</label>
                 <div class="col-sm-3">
                   <input type="text" class="form-control" id="prontuario">
                 </div>
             </div>
                
             <div class="form-group row align-items-center">
-                <label for="nome" class="col-sm-2 col-form-label">Nome:</label>
+                <label for="nome" class="col-sm-2 col-form-label">Sobre Nome:</label>
                 <div class="col-sm-4">
                     <input type="text" class="form-control" id="nome">
                 </div>
@@ -123,12 +123,14 @@
             </div>
 
             <div class="form-group row align-items-center">
-                <label for="curso" class="col-sm-2 col-form-label">Curso:</label>
+                <label for="curso" class="col-sm-2 col-form-label">Tipo de Causa:</label>
                 <div class="col-sm-4">
                     <select class="custom-select" id="curso" required>
-                        <option selected disabled value="">Escolha um curso</option>
-                        <option>Engenharia da Computação</option>
-                        <option>Engenharia de Software</option>
+                        <option selected disabled value="">Escolha um tipo</option>
+                        <option>civil</option>
+                        <option>Criminal</option>
+                        <option>imobiliario</option>
+                        <option>tributario</option>
                         <option>...</option>
                     </select>
                 </div>
@@ -143,9 +145,9 @@
                     </div>
                 </div>
             </div>
-
+<!--
             <div class="panel panel-primary">
-                <div class="panel-heading border-bottom mb-3">Dados do Responsável</div>
+                <div class="panel-heading border-bottom mb-3">Dados do Cliente</div>
             </div>
 
             <div class="form-group row align-items-center">
@@ -192,9 +194,11 @@
                   <input type="text" class="form-control" id="celular">
               </div>
             </div>
-            
+           --> 
             <div class="p-2 text-center">
-              <button type="button" class="btn btn-primary">Enviar</button>
+              <button type="button" class="btn btn-primary">Salvar</button>
+              <button type="button" class="btn btn-warning">Editar</button>
+              <button type="button" class="btn btn-warning">Excluir</button>
               <button type="button" class="btn btn-warning">Limpar</button>
             </div>
 
